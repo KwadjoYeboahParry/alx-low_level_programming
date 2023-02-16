@@ -1,19 +1,20 @@
 #include <stdio.h>
 /**
- * main - printing the size of various types;
- * Return: 0 (Success)
+ * main - prints the sizes of variable types;
+ * Return: 0 (Successfully run)
  */
 int main(void)
 {
-	char charType;
-	int intType;
-	long int longintType;
-	long long int longlongintType;
-	float floatType;
+	char a;
+	int b;
+	long int c;
+	long long int d;
+	float f;
 
-	printf("Size of a char: %zu bytes\n", sizeof(charType));
-	printf("size of an int: %zu bytes\n", sizeof(intType));
-	printf("size of a long int: %zu bytes\n", sizeof(longintType));
-	printf("size of a long long int: %zu bytes\n", sizeof(longlongintType));
-	printf("size of a float: %zu bytes\n", sizeof(floatType));
+	printf("Size of a char:%lu byte(s)\n", (unsigned long)sizeof(a));
+	printf("Size of an int: %lu byte(s)\n", (unsigned long)sizeof(b));
+	printf("Size of a long int: %lu byte(s)\n", (unsigned long)sizof(c));
+	printf("Size of a long long int: %lu byte(s)\n", (unsigned long)sizeof(d));
+	printf("Size of a float: %lu byte(s)\n", (unsigned long)sizeof(f));
+	return (0);
 }
