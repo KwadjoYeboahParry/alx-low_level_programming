@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * main - prints the sizes of variable types;
- * Return: 0 (Successfully run)
+ * Return: 0 (Success)
  */
 int main(void)
 {
