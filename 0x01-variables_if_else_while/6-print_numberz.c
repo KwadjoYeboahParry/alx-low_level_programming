@@ -1,4 +1,4 @@
-#include <stdio>
+#include <stdio.h>
 /**
  * main - prints base ten single digits with putchar only
  * Return: 0
