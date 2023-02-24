@@ -1,15 +1,24 @@
 #include "main.h"
-#include <stdio.h>
 /**
- * main - check code
- * Return: 0
+ * print_line - draws a straight line
+ * @n: the number of lines to draw
+ * Return: void
  */
-int main(void)
+void print_line(int n)
 {
-	print_line(0);
-	print_line(2);
-	print_line(10);
-	print_line(-4);
+	int x;
 
-	return (0);
+	if (n <= 0)
+	{
+		_putchar('\n');
+	}
+	else
+	{
+		for (x = 0; x < n; x++)
+		{
+			_putchar(95);
+		}
+		_putchar('\n');
+	}
 }
+
