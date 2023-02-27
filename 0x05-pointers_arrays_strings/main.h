@@ -23,3 +23,5 @@ int _atoi(char *s);
 #ifndef MAIN_H
 
 #define MAIN_H
+
+#endif
