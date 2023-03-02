@@ -44,7 +44,6 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 	j--;
 	if (j >= size_r || i >= size_r)
 		return (0);
-
 	while (j >= 0 || i >= 0 || overflow == 1)
 	{
 		if (i < 0)
@@ -67,7 +66,6 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 		j--;
 		i--;
 	}
-
 	if (digits == size_r)
 		return (0);
 	*(r + digits) = '\0';
