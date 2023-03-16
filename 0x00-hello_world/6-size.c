@@ -1,4 +1,4 @@
-include <stdio.h>
+#include <stdio.h>
 /**
  * main - prints the sizes of variable types;
  * Return: 0 (Success)
