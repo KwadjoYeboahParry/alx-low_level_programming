@@ -1,34 +1,40 @@
 #include <stdio.h>
+
 /**
- * main - prints all possible combinations of two digits
- * order is disregarded
- * Return: 0
+ *main -starting function
+ *Return: 0 - success
  */
+
 int main(void)
 {
-	int ones = '0';
-	int tens = '0';
+	int num1;
+	int num2;
+	int num3;
 
-	for (tens = '0'; tens <= '9'; tens++)
+	for (num1 = 0; num1 <= 9; num1++)
 	{
-		for (ones = '0'; ones <= '9'; ones++)
-{
+		for (num2 = 0; num2 <= 9; num2++)
+		{
+			for (num3 = 0; num3 <= 9; num3++)
+			{
+				if (num3 > num2 && num2 > num1)
+				{
+					putchar(num1 + '0');
+					putchar(num2 + '0');
+					putchar(num3 + '0');
 
-	if (!((ones == tens) || (tens > ones)))
-	{
-
-	putchar(tens);
-	putchar(ones);
-
-	if (!(ones =='9' && tens == '8'))
-	{
-			putchar(',');
-		putchar(' ');
+					if (num1 != 7 || num2 != 8 || num3 != 9)
+					{
+						putchar(',');
+						putchar(' ');
+					}
+				}
+			}
+		}
 	}
-}
-}
-}
-putchar('\n');
+	putchar('\n');
 
-return (0);
+	return (0);
 }
+Footer
+
