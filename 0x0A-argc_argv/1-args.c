@@ -1,11 +1,12 @@
-#include <stdio.h>
 #include "main.h"
+#include <stdio.h>
+
 /**
- * main - prints the number of arguments passed into it
- * @argv: array of arguments
+ * main - prints all arguments it receives
  * @argc: number of arguments
- * Return: 0
- */
+ * @argv: array of arguments
+ * Return: (0)
+ **/
 
 int main(int argc, char *argv[])
 {
@@ -19,3 +20,4 @@ int main(int argc, char *argv[])
 	}
 	return (0);
 }
+
